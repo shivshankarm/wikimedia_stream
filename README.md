@@ -1,4 +1,4 @@
-Datapipeline using Springboot Apache Kafka to stream data from Wikimedia. 
+# Datapipeline using Springboot Apache Kafka to stream data from Wikimedia. 
 
 The project is used to demonstrate how to stream recent changes in Wikipedia using Apache kafka and store in a MySQL database. 
 1. Wikimedia stream generates a stream of recent changes in wikipedia(https://wikitech.wikimedia.org/wiki/Stream.wikimedia.org) (https://stream.wikimedia.org/v2/stream/recentchange)
@@ -9,10 +9,10 @@ The project is used to demonstrate how to stream recent changes in Wikipedia usi
 4. Kafka is used as a messaging system to exchange messages between these two microservices. 
 5. MySQL workbench is used as visual tool for viewing the stored records in the MySQL database. 
 
-Here is a high level architecture of this project:
+# Here is a high level architecture of this project:
 ![Kafka_Architecture](https://github.com/shivshankarm/wikimedia_stream/assets/132717412/c0c595dc-94fc-4576-a3b7-6dd271e3a8d4)
 
-Steps:
+# Steps:
 1. Run Apache Zoo Keeper: 
 2. Run Kafka Producer: https://github.com/shivshankarm/wikimedia_stream/tree/main/springboot-kafka-wikimedia/kafka-producer-wikimedia/src/main/java/net/javaguides/sprintboot
 3. Run Kafka Consumer: https://github.com/shivshankarm/wikimedia_stream/tree/main/springboot-kafka-wikimedia/kafka-consumer-database/src/main/java/net/javaguides/springboot
